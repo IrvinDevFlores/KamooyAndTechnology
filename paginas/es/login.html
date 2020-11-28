@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+</head>
+<body background="../../rsc/img/fond.gif" bgcolor="FFCECB">
+
+ <div>
+  
+   <table  border=1  bgcolor=burlywood align=center >
+
+    <h1 align="center"  style="color:honeydew">Registro de Usuario</h1>
+    <tr>
+      <td><label for="fname">Nombre :</label></td>
+       <td><input type="text" id="fname" name="fname"></td> <br>
+      </tr>
+      
+      <tr>
+        <td><label for="lname">Apellido :</label>
+         <td><input type="text" id="lname" name="lname"></td><br>
+        </tr>
+
+        
+          <td><label for="fname"> Genero  :</label></td>
+          <td>Hombre:
+             <input type="radio" name="genero" value="m"><br>
+               Mujer:
+             <input type="radio" name="genero" value="f"></td><br>
+          </tr>
+     
+          <tr>
+            <td><label for="fname">Edad   :</label></td>
+            <td><input name="edad" type="number" min="0"></td> <br>
+           </tr>
+
+
+  <tr>
+    <td><h4><label for="email">Ocupacion  :</label></td>
+      
+         <td> <select name="ocupacion">
+                <option value="1">Trabajador</option>
+                <option value="2">Estudiante</option>
+                <option value="3">Jubilado</option>
+                <option value="otro">Otro</option>
+          </select></td>
+       </h4>
+      </tr>
+  
+      <tr>
+      <td><label for="email">Email:</label></td>
+      <td><input type="email" id="email" name="email"></td><br><br>
+     </tr>
+  
+      <tr>
+      <td><label for="birthday">Fecha de Nacimiento:</label></td>
+      <td><input type="date" id="birthday" name="birthday"></td><br><br>
+      </tr>
+  
+      <tr>
+      <td> <label for="comentario">Comentario:</label></td>
+       <td><textarea rows="3" name="comentario" >Escriba un comentario</textarea></td><br>
+      </tr>
+  
+      <tr>
+      <td> <input type="submit" value="Enviar"> </td>
+      </tr>
+
+   </table>
+ </div>
+
+</body>
+</html>

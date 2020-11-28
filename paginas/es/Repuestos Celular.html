@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../../estilos/bootstrap/css/bootstrap.min.css">
+    <script src="../../estilos/bootstrap/js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="javier">
+    
+    <link rel="stylesheet" href="../../estilos/bootstrap/css/sweetalert2.min.css">
+
+    <title>Repuestos Celulares</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                    <a class="navbar-brand" href="#">Empresa de Tecnologia</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <img src="../../rsc/img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"></img>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                                        Compra</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+            <br>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="producto.html">Productos</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Repuestos Celulares</li>
+                </ol>
+              </nav>  
+            <h1 class="display-4 mt-4">Lista de Productos</h1>
+            <p class="lead">Selecciona uno de nuestros productos y accede a un descuento</p>
+        </div>
+
+        <div class="container" id="lista-productos">
+            
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Tactil J2 prime</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../../rsc/img/Resp-Celular/Tactil-j2p.jpg" class="card-img-top">
+                        <h4 class="card-title pricing-card-title precio">L/. <span class="">380</span></h4>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Pantalla táctil Samsung Galaxy</li>
+                            <li> J2 Prime </li>
+                            <li>Color Negra</li>
+                           
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Pantalla J7 Pro</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../../rsc/img/Resp-Celular/pantalla-j7pro.jpg" class="card-img-top">
+                        <h4 class="card-title pricing-card-title precio">L/. <span class="">1700</span></h4>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                           
+                            <li>Color Negro,Dorado</li>
+                            <li>Morado</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Pantalla S9 plus</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../../rsc/img/Resp-Celular/s9plusOr.jpg" class="card-img-top">
+                        <h4 class="card-title pricing-card-title precio">L/. <span class="">6680</span></h4>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Pantalla Original S9 plus</li>
+                            <li>LCD con marco Super AMOLED </li>
+                            <li>Color azul</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Pantalla Huawei 2019</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../../rsc/img/Resp-Celular/pantalla-y9p19.jpg" class="card-img-top">
+                        <h4 class="card-title pricing-card-title precio">L/. <span class="">2000</span></h4>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Pantalla HUAWEI </li>
+                            <li>Y9 PRIME 2019</li>
+                            <li>COLOR Negro</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Pantalla Xiaomi Redmi</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../../rsc/img/Resp-Celular/pantalla-Not8pro.jpg" class="card-img-top">
+                        <h4 class="card-title pricing-card-title precio"><br>L/. <span class=""> 8000</span></h4>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Pantalla Xiaomi </li>
+                            <li>Note 8 Pro Original</li>
+                            <li>Color Negro</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Pantalla Bmobile</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../../rsc/img/Resp-Celular/Tactil-BmoAx660.jpg" class="card-img-top">
+                        <h4 class="card-title pricing-card-title precio">L/. <span class="">400</span></h4>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Pantalla táctil Original </li>
+                            <li> Bmobile AX660 </li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Pantalla LG</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../../rsc/img/Resp-Celular/pantalla-K40s.jpg" class="card-img-top">
+                        <h4 class="card-title pricing-card-title precio">L/. <span class="">1450</span></h4>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Pantalla LCD LG K40s </li>
+                            <li>mas tactil negro </li>
+                            <li>y marco negro </li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Pantalla A21s</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../../rsc/img/Resp-Celular/pantalla-A21s.jpg" class="card-img-top">
+                        <h4 class="card-title pricing-card-title precio">L/. <span class="">2116</span></h4>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Pantalla completa samsung </li>
+                            <li> A21s galaxi </li>
+                            <li>A217F negro - Original</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Pantalla Iphone</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../../rsc/img/Resp-Celular/pantalla-Iph7plus.jpg" class="card-img-top">
+                        <h4 class="card-title pricing-card-title precio">L/. <span class="">1650</span></h4>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Pantalla completa</li>
+                            <li> Iphone 7 plus Original</li>
+                            <li>Color blanco</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </main>
+
+    <script src="../../estilos/bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../../estilos/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../estilos/bootstrap/js/sweetalert2.min.js"></script>
+    <script src="../../estilos/carrito.js"></script>
+    <script src="../../estilos/pedido.js"></script>
+
+</body>
+
+</html>
