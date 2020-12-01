@@ -1,0 +1,132 @@
+/*Registrarse*/
+
+
+body{
+  background-color: rgb(245, 243, 241);
+}
+
+.encabezado{
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+  border-bottom-color: rgb(5, 202, 87);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.form-register{
+  width: 400px;
+  background: darkslategrey;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+}
+
+.form-register h4{
+  color: honeydew;
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+.controls{
+  width: 100%;
+  background: #A6CF97;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px
+  solid grey;
+  font-family:  'calibri';
+  font-size: 18px;
+
+
+}
+
+.nacimiento{
+
+  width: 65%;
+  background: #A6CF97;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px
+  solid grey;
+  font-family:  'calibri';
+  font-size: 18px;
+}
+
+.botons{
+
+  width: 100%;
+  background: rgb(69, 161, 204);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px
+  solid gray;
+  font-family:  'calibri';
+  font-size: 18px;
+
+
+}
+
+.select{
+
+  width: 100%;
+  background: #A6CF97;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px
+  solid rgb(146, 149, 151);
+  font-family:  'calibri';
+  font-size: 18px;
+}
+
+
+
+.texto{
+  width:76%;
+  background: #A6CF97;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px
+  solid rgb(146, 149, 151);
+  font-family:  'calibri';
+  font-size: 18px;
+
+}
+
+.codigo{
+  width: 20%;
+  background: #A6CF97;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px
+  solidrgb(146, 149, 151);
+  font-family:  'calibri';
+  font-size: 18px;
+}
+.puesto{
+  
+  width: 100%;
+  background: #A6CF97;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px
+  solidrgb(146, 149, 151);
+  font-family:  'calibri';
+  font-size: 18px;
+}
+
+  
+
+

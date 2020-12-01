@@ -94,7 +94,7 @@ function procesarCompra() {
             cargandoGif.style.display = 'block';
 
             const enviado = document.createElement('img');
-            enviado.src = '../img/Logo.png';
+            enviado.src = 'img/mail.gif';
             enviado.style.display = 'block';
             enviado.width = '150';
 
@@ -106,7 +106,7 @@ function procesarCompra() {
                     setTimeout(() => {
                         compra.vaciarLocalStorage();
                         enviado.remove();
-                        window.location = "../../index.html";
+                        window.location = "index.html";
                     }, 2000);
 
 

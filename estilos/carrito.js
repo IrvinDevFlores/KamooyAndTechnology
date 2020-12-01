@@ -191,7 +191,7 @@ class Carrito {
             })
         }
         else {
-            location.href = "compra.html";
+            location.href = "Registrarse.html";
         }
     }
 
@@ -209,9 +209,9 @@ class Carrito {
         igv = parseFloat(total * 0.18).toFixed(2);
         subtotal = parseFloat(total-igv).toFixed(2);
 
-        document.getElementById('subtotal').innerHTML = "L/. " + subtotal;
-        document.getElementById('igv').innerHTML = "L/. " + igv;
-        document.getElementById('total').value = "L/. " + total.toFixed(2);
+        document.getElementById('subtotal').innerHTML = "S/. " + subtotal;
+        document.getElementById('igv').innerHTML = "S/. " + igv;
+        document.getElementById('total').value = "S/. " + total.toFixed(2);
     }
 
     obtenerEvento(e) {
