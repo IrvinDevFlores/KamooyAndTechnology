@@ -177,7 +177,7 @@ class Carrito {
         localStorage.clear();
     }
 
-    //Procesar pedido
+    //Procesar pedido del carrito
     procesarPedido(e){
         e.preventDefault();
 
