@@ -177,7 +177,7 @@ class Carrito {
         localStorage.clear();
     }
 
-    //Procesar pedido del carrito
+    //Procesar pedido
     procesarPedido(e){
         e.preventDefault();
 
@@ -191,7 +191,7 @@ class Carrito {
             })
         }
         else {
-            location.href = "Registrarse.html";
+            location.href = "CrearCuenta.php";
         }
     }
 

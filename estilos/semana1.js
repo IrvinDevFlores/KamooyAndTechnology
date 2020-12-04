@@ -1,130 +1,81 @@
+function Registrarse(){
+
+    defectoColor(document.getElementById("Email"));
+    defectoColor(document.getElementById("Nombre1"));
 
 
-//alert("Hola Mundo <br> Javascript... ");
-
-//DECLARAR VARIABLES GLOBALES
-
-var compra=5000; //variable para la compra
-var isv=compra*0.15;
-var total=compra + isv;
-
-function prod(){
-    var num1=50;  //VARIABLES LOCALES
-    var num2=10;
-    var p=num1*num2;
-    alert("El producto es : " + p);
-}
-
-function suma(){
-    var num1=10;  
-    var num2=50;
-    var num3=30;  
-    var num4=80;
-    var num5=90;
-    var result= num1+num2+num3+num4+num5;
-    alert("La suma de 5 variables es: "+ result);
-
-}
-
-function evaluar(){
-    var edad=30;
+   // var correo = document.getElementById("Email").value; 
+    var nom1 = document.getElementsByName("Nombre1")[0].value;
+    var nom2 = document.getElementsByName("Nombre2")[0].value;
+    var app1 = document.getElementsByName("Apellido1")[0].value;
+    var app2 = document.getElementsByName("Apellido2")[0].value;
+    var or = document.getElementsByName("origen")[0].value;
+    var cel = document.getElementsByName("cel")[0].value;
+    var dicc = document.getElementsByName("direccion")[0].value;
+   
     
-    if(edad>=40){
-    alert("La persona con "+ edad +"  años es mayor de edad");
+   // var expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    
+    
+   /* if ( !expr.test(correo) ){                                                            //COMPRUEBA MAIL
+        alert("Error: La dirección de correo " + correo + " es incorrecta.");
+        alertasColor(document.getElementById("Email"));
+        return false;
+    }*/
+    
+    if ((dicc == "") || (nom1 == "") || (nom2 == "") || (app1 == "") || (app2 == "") || (or == "") ||(cel == "") ) {  //COMPRUEBA CAMPOS VACIOS
+        alert("Los campos no pueden quedar vacios");
+        return true;
     }
-    else if(edad<40){
-        alert("La persona con "+ edad +" años es menor de edad");
-
-    }
+    
+    
 }
 
-function comprar(){
 
-    var compra=30000;
-    if(compra>5000){
+function CrearCuenta(){
 
-        document.write("<p>La compra es superior a 5000</p>");
-    }
-    else if (compra>0){
-        document.write("<p>La compra es mayor a 0</p>");
+    defectoColor(document.getElementById("Email"));
+    defectoColor(document.getElementById("Nombre1"));
 
+
+    var correo = document.getElementById("Email").value; 
+    var nom1 = document.getElementsByName("Nombre1")[0].value;
+    
+    var contra = document.getElementsByName("pass")[0].value;
+   
+    
+   var expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    
+    
+    if ( !expr.test(correo) ){                                                            //COMPRUEBA MAIL
+        alert("Error: La dirección de correo " + correo + " es incorrecta.");
+        alertasColor(document.getElementById("Email"));
+        return false;
     }
-    else if (compra==0){
-        document.write("<p>La compra es igual a 0</p>");
-        
+    
+    if ((correo == "") || (nom1 == "") || (contra == "")  ) {  //COMPRUEBA CAMPOS VACIOS
+        alert("Los campos no pueden quedar vacios");
+        return true;
     }
+    
+    
 }
 
-function tabla1(){
-  var r=5;
-  var c=3;
-  var i=0;
-  var encabezado=" "+
-  "<table class='table table=hover'>"+
-  "<thead>"+
-  "    <tr>"+
-  "    <th scope='col'>Columna 1</th>"+
-  "    <th scope='col'>Columna 2</th>"+
-  "    <th scope='col'>Columna 3</th>"+
-  "     </tr>"+
-  "</thead>"+
-  "";
-var inicioT="<tbody>"
-var FinT="</tbody></table>"
-var cuerpo="";
-
-document.write(encabezado);
-document.write(inicioT);
-for(i=1;i<=r;i++){
-    cuerpo="<tr>"+
-    "<th scope='row'>"+i+"</th>"+
-    "<td>Ejercicio FOR</td>"+
-    "<td>Web I</td>"+
-    "</tr>";
-    document.write(cuerpo);
+function alertasColor(parametro){
+    var element = parametro;
+    element.style = "background-color: rgb(251,250,174);"
 }
-document.write(FinT);
 
-};
+function defectoColor(parametro){
+    var element = parametro;
+    element.style = "background-color: white;"
+}
 
-function datosEmpleados(){
-    var r=3;
-    var c=3;
-    var i=0;
-    var ID =["0101","0102","0103"];
-    var nombres=["Javier","Wilmer","Miguel"];
-    var apellidos=["Javier","Wilmer","Miguel"];
-    var edades=["30","20","10"];
-    var tamanio=ID.length;
-    var encabezado=" "+
-    "<table class='table table=hover'>"+
-    "<thead>"+
-    "    <tr>"+
-    "    <th scope='col'>ID</th>"+
-    "    <th scope='col'>Nombres</th>"+
-    "    <th scope='col'>Apellidos</th>"+
-    "    <th scope='col'>Edades</th>"+
-    "     </tr>"+
-    "</thead>"+
-    "";
-  var inicioT="<tbody>"
-  var FinT="</tbody></table>"
-  var cuerpo="";
-  
-  document.write(encabezado);
-  document.write(inicioT);
-  for(i=1;i<=tamanio;i++){
-      cuerpo="<tr>"+
-      "<th scope='row'>"+ID[i]+"</th>"+
-      "<td> "+ nombres[i] +"</td>"+
-      "<td>"+apellidos+"</td>"+
-      "<td>"+edades+"</td>"+
-      "</tr>";
-      document.write(cuerpo);
-  }
-  document.write(FinT);
-  
-  };
+function load(){
+    var elemento1 = document.getElementById("buttonver");
+    var elemento2 = document.getElementById("cajaTexto");
+    elemento1.addEventListener("click", function(){
+        elemento2.value = "Text mostrado"
+    })
 
-  
- 
+}
