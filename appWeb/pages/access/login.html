@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../styles/b4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../styles/site2.css" />
+ 
+  <title>Login</title>
+</head>
+
+<body>
+  <header>
+    <a href="../index.html"> <img src="../logo.png" class="logo" alt="" /></a>
+  </header>
+
+  <div class="present">
+    <div class="log"></div>
+    <section>
+      <h2 class="titulo">Iniciar sesion</h2>
+        <form action="" name='login' method="">
+       
+          <input type="text" name="usuario" placeholder="Usuarios"
+          id="usuario" />
+         <div id="userMessage" class="userMessage"></div> 
+
+         <input type="password" name="Contraseña" 
+          placeholder="Password"
+           id="pass" />
+         <div id="passwordMessage" class="userMessage">
+
+         </div>
+         <input type="button" id="InitLoginButton" value="Iniciar sesion"
+           class=" iniciarBtn"
+           onclick="Login()"
+           ></input>
+        </form>
+
+        <p id="crearCuentaBox">
+          Eres nuevo? --> <a href="../access/crear-cuenta.html">Crear cuenta</a>
+        </p>
+        <p>
+          No te acuerdas del password ya? -->
+          <a href="../access/recuperar-pass.html"> Recuperar</a>
+        </p>
+
+       
+    </section>
+  </div>
+
+
+
+
+
+
+  <script src="../scripts/b4/jquery-3.5.1.slim.min.js"></script>
+  <script src="../scripts/b4/popper.min.js"></script>
+  <script src="../scripts/b4/bootstrap.min.js"></script>
+  <script src="../scripts/application/FormInfoExtractor.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>

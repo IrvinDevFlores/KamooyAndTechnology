@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    border: 2px solid yellow;
+}
+
+.loginActions{
+    display: flex;
+    justify-content: flex-end;
+    border: 3px solid red;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    border: 3px solid green;
+}
+
+
+/*navbar*/
+
+.narBar{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.narBar nav{
+    display: flex;
+
+    width: 60%;
+}
+nav li a{
+    text-decoration: none;
+}
+nav li{
+    list-style: none;
+}
+.narBar nav li{
+    width: 25%;
+    margin: 0;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.slide{
+    display: flex;
+    width: 100%;
+    min-height: 200px;
+    border: 2px solid red;
+    
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.slide figure{
+    background: black;
+    color: white;
+    width: 25%;
+    justify-content: space-between;
+    margin: 5px 5px 10px;
+}
+
+.contenedorCuerpo{
+    width: 100%;
+    display: flex;
+    border: 2px solid red;
+}
+
+.contenedorCuerpo .data{
+    width: 60%;
+    border: 2px solid rgb(131, 131, 131);
+}
+
+.contenedorCuerpo .primerCaja{
+    border: 2px solid rgb(131, 131, 131);
+}
+
+.contenedorCuerpo .ubicacion{
+    width: 40%;
+    border: 2px solid black;
+}
+
+
+.iFrame{
+    width: 100%;
+}
+
+.foot{
+    width: 100%;
+    background: black;
+    color: #fff;
+    display: flex;
+    flex-basis: 50%;
+}
+
+.redes{
+    width: 50%;
+}
+
+.copyright{
+    width: 50%;
+}
