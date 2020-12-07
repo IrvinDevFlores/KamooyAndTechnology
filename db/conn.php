@@ -5,7 +5,8 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "tecnologia";
+#asi se debe llamar en tu compu y en la mia porfa...
+$database = "kamook_tech";
 
 $conn = mysqli_connect($servername, $username, $password, $database);
 
