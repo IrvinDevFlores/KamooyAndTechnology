@@ -1,0 +1,155 @@
+<!-- udacimak v1.2.1 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kamooy</title>
+    <link rel="stylesheet" href="../../styles/b4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../styles/plyr.css" />
+    <link rel="stylesheet" href="../../styles/katex.min.css" />
+    <link
+      rel="stylesheet"
+      href="../../styles/jquery.mCustomScrollbar.min.css"
+    />
+    <link rel="stylesheet" href="../../styles/styles.css" />
+
+    <link rel="stylesheet" href="../../styles/site.css" />
+
+    <!--Scripts-->
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <nav id="sidebar">
+        <!--  <h2 class="logo"><a href="">Kamook</a></h2> -->
+
+        <div class="sidebar-header text-center">
+          <h3>Pulperia Casa Blanca</h3>
+        </div>
+
+        <ul class="sidebar-list list-unstyled CTAs">
+          <li>
+            <a href="../index.html" class="article">Recarga</a>
+          </li>
+        </ul>
+
+        <ul class="sidebar-list list-unstyled components text-center">
+          <li class="">
+            <a href="../dashboard/main.html">Inicio</a>
+          </li>
+          <li class="">
+            <a href="#">Inventario</a>
+          </li>
+          <li class="">
+            <a href="#">Caja</a>
+          </li>
+          <li class="">
+            <a href="#">Reportes</a>
+          </li>
+        </ul>
+
+        <ul class="sidebar-list list-unstyled CTAs">
+          <li>
+            <a href="../index.html" class="article">Back to Home</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="content">
+        <header class="container-fluild header">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="align-items-middle">
+                  <button
+                    type="button"
+                    id="sidebarCollapse"
+                    class="btn btn-toggle-sidebar"
+                  >
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </button>
+
+                  <a href="">
+                    <img src="../../logo.png" class="logo" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="infoTable">
+                <input
+                  class="boxOfTable"
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#InventorySupplierModal"
+                  id="AddSupplierButton"
+                  value=" Agregar proveedor"
+                />
+
+                <input
+                  class="boxOfTable"
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#InventorySupplierModal"
+                  id="AddProductsButton"
+                  value="Agregar Productos"
+                />
+
+                <button
+                  class="boxOfTable"
+                  type="button"
+                  class="btn btn-success"
+                  data-toggle="modal"
+                  data-target="#InventorySupplierModal"
+                  id="SupplierButton"
+                >
+                  Proveedores
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div id="ModalContainer" class="row"></div>
+        </main>
+
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <p class="text-center">
+                  <a href="" target="_blank">Irvin Flores 1.2v</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!--Scripts-->
+
+    <script src="../../scripts/b4/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../scripts/b4/popper.min.js"></script>
+    <script src="../../scripts/b4/plyr.polyfilled.min.js"></script>
+    <script src="../../scripts/b4/bootstrap.min.js"></script>
+    <script src="../../scripts/b4/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../../scripts/b4/katex.min.js"></script>
+
+    <script src="../../scripts/shareKernel/core.js"></script>
+    <script src="../../scripts/application/domain.js"></script>
+    <script src="../../scripts/application/inventory.js"></script>
+
+
+  </body>
+</html>
